@@ -1,4 +1,4 @@
-//
+ //
 //  ContentView.swift
 //  HowToCreateShadows
 //
@@ -10,7 +10,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello World")
+        Image("tree")
+            .clipShape(Circle())
+            .overlay(Circle().stroke(Color.red, lineWidth: 3))
+            .shadow(color: Color.red, radius: 13)
     }
 }
 
